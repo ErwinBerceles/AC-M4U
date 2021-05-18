@@ -14,3 +14,15 @@ function checkTime(i) {
     
 }
 
+function playMusic(){
+ var OST = [
+    {
+        name: "2 PM - City Folk",
+        path: "resources/ost/CityFolk2PM.mp3"
+    },
+    {
+        name: "9 PM - New Horizon",
+        path: "resources/ost/NewHorizons9PM.mp3"
+    }
+]
+ }

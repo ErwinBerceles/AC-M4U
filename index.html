@@ -2,19 +2,44 @@
 <html>
 <head>
     <title>Animal Crossing: Music 4 U</title>
+    <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="resources/css/index.css"/>
 </head>
 <body onload="startTime()">
     <script src="resources/js/index.js"></script>
     <audio controls autoplay loop muted>
-        <source src="resources/ost/Animal%20Crossing%20City%20Folk%20OST%20'2%20PM%20(Normal)'.mp3" type="audio/mp3">
-    </audio>
-    
-
-    
+        <source src="resources/ost/CityFolk2PM.mp3"  type="audio/mp3">
+    </audio>    
     <div id="txt">
+          
+    </div>
+    <div class="main">
+        <p id = "logo"><i class = "fa fa-music" aria-hidden="true"></i></p>
         
-    
-   
+        <div class= "left">
+            <img id = "track_image">
+            <div class = "volume">
+            <p id = "volume_show">90</p>
+            <i class="fa fa-volume-up" aria-hidden="true" id = "volume_icon" onclick = "muteSound()"></i>
+            <input type = "range" min = "0" max = "100" value = "90" onchage = "volumeChange()">
+        </div>
+        </div>
+        
+        <div class = "right">
+            <div class = "show_song_no">
+                <p id = "present"> 1 </p>
+                <p></p>
+                <p id = "total"> 5 </p>
+            </div>
+            
+            <p id = "title">title.mp3</p>        
+            <p id = "artist"> Artist Name</p>
+            
+            <div class = "middle">
+                <button onclick = "justPlay()" id = "play"> <i class = "fa fa-play" aria-hidden = 'true'></i></button>
+            </div>
+            
+        </div>
     </div>
 </body>
 </html>
