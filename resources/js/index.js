@@ -66,3 +66,21 @@ function playSong(){
     playing_song = true;
     play.innerHTML = '<i class = "fa fa-pause"></i>'
 }
+
+function pauseSong(){
+    track.pause();
+    playing_song= false;
+    play.innerHTML = '<i class="fa fa-play"></i>'
+    
+}
+
+function volumeChange(){
+    volume_show.innerHTML = recent_volume.value;
+    track.volume = recent_volume.value / 100;
+}
+
+function muteSound(){
+    track.volume = 0;
+    volume.value = 0;
+    volume_show.innerHTML = 0;
+}
