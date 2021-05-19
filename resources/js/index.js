@@ -15,7 +15,131 @@ let playing_song = false;
 
 let track = document.createElement('audio');
 
-var OST_three = [
+var OST_one = [
+    {
+        name: "1 AM",
+        path: "resources/ost/GameCube/AM 1.mp3",
+        img: "resources/img/GameCube.png",
+        artist: "Animal Crossing"
+    },{
+        name: "2 AM",
+        path: "resources/ost/GameCube/AM 2.mp3",
+        img: "resources/img/GameCube.png",
+        artist: "Animal Crossing"
+    },{
+        name: "3 AM",
+        path: "resources/ost/GameCube/AM 3.mp3",
+        img: "resources/img/GameCube.png",
+        artist: "Animal Crossing"
+    },{
+        name: "4 AM",
+        path: "resources/ost/GameCube/AM 4.mp3",
+        img: "resources/img/GameCube.png",
+        artist: "Animal Crossing"
+    },{
+        name: "5 AM",
+        path: "resources/ost/GameCube/AM 5.mp3",
+        img: "resources/img/GameCube.png",
+        artist: "Animal Crossing"
+    },{
+        name: "6 AM",
+        path: "resources/ost/GameCube/AM 6.mp3",
+        img: "resources/img/GameCube.png",
+        artist: "Animal Crossing"
+    },{
+        name: "7 AM",
+        path: "resources/ost/GameCube/AM 7.mp3",
+        img: "resources/img/GameCube.png",
+        artist: "Animal Crossing"
+    },{
+        name: "8 AM",
+        path: "resources/ost/GameCube/AM 8.mp3",
+        img: "resources/img/GameCube.png",
+        artist: "Animal Crossing"
+    },{
+        name: "9 AM",
+        path: "resources/ost/GameCube/AM 9.mp3",
+        img: "resources/img/GameCube.png",
+        artist: "Animal Crossing"
+    },{
+        name: "10 AM",
+        path: "resources/ost/GameCube/AM 10.mp3",
+        img: "resources/img/GameCube.png",
+        artist: "Animal Crossing"
+    },{
+        name: "11 AM",
+        path: "resources/ost/GameCube/AM 11.mp3",
+        img: "resources/img/GameCube.png",
+        artist: "Animal Crossing"
+    },{
+        name: "Noon",
+        path: "resources/ost/GameCube/Noon.mp3",
+        img: "resources/img/GameCube.png",
+        artist: "Animal Crossing"
+    },{
+        name: "1 PM",
+        path: "resources/ost/GameCube/PM 1.mp3",
+        img: "resources/img/GameCube.png",
+        artist: "Animal Crossing"
+    },{
+        name: "2 PM",
+        path: "resources/ost/GameCube/PM 2.mp3",
+        img: "resources/img/GameCube.png",
+        artist: "Animal Crossing"
+    },{
+        name: "3 PM",
+        path: "resources/ost/GameCube/PM 3.mp3",
+        img: "resources/img/GameCube.png",
+        artist: "Animal Crossing"
+    },{
+        name: "4 PM",
+        path: "resources/ost/GameCube/PM 4.mp3",
+        img: "resources/img/GameCube.png",
+        artist: "Animal Crossing"
+    },{
+        name: "5 PM",
+        path: "resources/ost/GameCube/PM 5.mp3",
+        img: "resources/img/GameCube.png",
+        artist: "Animal Crossing"
+    },{
+        name: "6 PM",
+        path: "resources/ost/GameCube/PM 6.mp3",
+        img: "resources/img/GameCube.png",
+        artist: "Animal Crossing"
+    },{
+        name: "7 PM",
+        path: "resources/ost/GameCube/PM 7.mp3",
+        img: "resources/img/GameCube.png",
+        artist: "Animal Crossing"
+    },{
+        name: "8 PM",
+        path: "resources/ost/GameCube/PM 8.mp3",
+        img: "resources/img/GameCube.png",
+        artist: "Animal Crossing"
+    },{
+        name: "9 PM",
+        path: "resources/ost/GameCube/PM 9.mp3",
+        img: "resources/img/GameCube.png",
+        artist: "Animal Crossing"
+    },{
+        name: "10 PM",
+        path: "resources/ost/GameCube/PM 10.mp3",
+        img: "resources/img/GameCube.png",
+        artist: "Animal Crossing"
+    },{
+        name: "11 PM",
+        path: "resources/ost/GameCube/PM 11.mp3",
+        img: "resources/img/GameCube.png",
+        artist: "Animal Crossing"
+    },{
+        name: "Midnight",
+        path: "resources/ost/GameCube/Midnight.mp3",
+        img: "resources/img/GameCube.png",
+        artist: "Animal Crossing"
+    },
+]
+
+var OST_two = [
     {
         name: "1 AM - City Folk",
         path: "resources/ost/CityFolk/AM 1.mp3",
@@ -162,130 +286,7 @@ var OST_three = [
     }    
 ]
 
-var OST_one = [
-    {
-        name: "1 AM",
-        path: "resources/ost/GameCube/AM 1.mp3",
-        img: "resources/img/GameCube.png",
-        artist: "Animal Crossing"
-    },{
-        name: "2 AM",
-        path: "resources/ost/GameCube/AM 2.mp3",
-        img: "resources/img/GameCube.png",
-        artist: "Animal Crossing"
-    },{
-        name: "3 AM",
-        path: "resources/ost/GameCube/AM 3.mp3",
-        img: "resources/img/GameCube.png",
-        artist: "Animal Crossing"
-    },{
-        name: "4 AM",
-        path: "resources/ost/GameCube/AM 4.mp3",
-        img: "resources/img/GameCube.png",
-        artist: "Animal Crossing"
-    },{
-        name: "5 AM",
-        path: "resources/ost/GameCube/AM 5.mp3",
-        img: "resources/img/GameCube.png",
-        artist: "Animal Crossing"
-    },{
-        name: "6 AM",
-        path: "resources/ost/GameCube/AM 6.mp3",
-        img: "resources/img/GameCube.png",
-        artist: "Animal Crossing"
-    },{
-        name: "7 AM",
-        path: "resources/ost/GameCube/AM 7.mp3",
-        img: "resources/img/GameCube.png",
-        artist: "Animal Crossing"
-    },{
-        name: "8 AM",
-        path: "resources/ost/GameCube/AM 8.mp3",
-        img: "resources/img/GameCube.png",
-        artist: "Animal Crossing"
-    },{
-        name: "9 AM",
-        path: "resources/ost/GameCube/AM 9.mp3",
-        img: "resources/img/GameCube.png",
-        artist: "Animal Crossing"
-    },{
-        name: "10 AM",
-        path: "resources/ost/GameCube/AM 10.mp3",
-        img: "resources/img/GameCube.png",
-        artist: "Animal Crossing"
-    },{
-        name: "11 AM",
-        path: "resources/ost/GameCube/AM 11.mp3",
-        img: "resources/img/GameCube.png",
-        artist: "Animal Crossing"
-    },{
-        name: "Noon",
-        path: "resources/ost/GameCube/Noon.mp3",
-        img: "resources/img/GameCube.png",
-        artist: "Animal Crossing"
-    },{
-        name: "1 PM",
-        path: "resources/ost/GameCube/PM 1.mp3",
-        img: "resources/img/GameCube.png",
-        artist: "Animal Crossing"
-    },{
-        name: "2 PM",
-        path: "resources/ost/GameCube/PM 2.mp3",
-        img: "resources/img/GameCube.png",
-        artist: "Animal Crossing"
-    },{
-        name: "3 PM",
-        path: "resources/ost/GameCube/PM 3.mp3",
-        img: "resources/img/GameCube.png",
-        artist: "Animal Crossing"
-    },{
-        name: "4 PM",
-        path: "resources/ost/GameCube/PM 4.mp3",
-        img: "resources/img/GameCube.png",
-        artist: "Animal Crossing"
-    },{
-        name: "5 PM",
-        path: "resources/ost/GameCube/PM 5.mp3",
-        img: "resources/img/GameCube.png",
-        artist: "Animal Crossing"
-    },{
-        name: "6 PM",
-        path: "resources/ost/GameCube/PM 6.mp3",
-        img: "resources/img/GameCube.png",
-        artist: "Animal Crossing"
-    },{
-        name: "7 PM",
-        path: "resources/ost/GameCube/PM 7.mp3",
-        img: "resources/img/GameCube.png",
-        artist: "Animal Crossing"
-    },{
-        name: "8 PM",
-        path: "resources/ost/GameCube/PM 8.mp3",
-        img: "resources/img/GameCube.png",
-        artist: "Animal Crossing"
-    },{
-        name: "9 PM",
-        path: "resources/ost/GameCube/PM 9.mp3",
-        img: "resources/img/GameCube.png",
-        artist: "Animal Crossing"
-    },{
-        name: "10 PM",
-        path: "resources/ost/GameCube/PM 10.mp3",
-        img: "resources/img/GameCube.png",
-        artist: "Animal Crossing"
-    },{
-        name: "11 PM",
-        path: "resources/ost/GameCube/PM 11.mp3",
-        img: "resources/img/GameCube.png",
-        artist: "Animal Crossing"
-    },{
-        name: "Midnight",
-        path: "resources/ost/GameCube/Midnight.mp3",
-        img: "resources/img/GameCube.png",
-        artist: "Animal Crossing"
-    },
-    
-    ]
+
 
 var choice = OST_one;
 var fish = 0;
