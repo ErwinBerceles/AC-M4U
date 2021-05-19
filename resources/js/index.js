@@ -15,17 +15,149 @@ let track = document.createElement('audio');
 
 let OST = [
     {
-        name: "2 PM - City Folk",
-        path: "resources/ost/CityFolk2PM.mp3",
+        name: "1 AM - City Folk",
+        path: "resources/ost/CityFolk/AM 1.mp3",
+        img: "resources/img/CityFolk.png",
+        artist: "Animal Crossing: City Folk"
+    },
+    {
+        name: "2 AM - City Folk",
+        path: "resources/ost/CityFolk/AM 2.mp3",
+        img: "resources/img/CityFolk.png",
+        artist: "Animal Crossing: City Folk"
+    },
+    {
+        name: "3 AM - City Folk",
+        path: "resources/ost/CityFolk/AM 3.mp3",
+        img: "resources/img/CityFolk.png",
+        artist: "Animal Crossing: City Folk"
+    },
+    {
+        name: "4 AM - City Folk",
+        path: "resources/ost/CityFolk/AM 4.mp3",
+        img: "resources/img/CityFolk.png",
+        artist: "Animal Crossing: City Folk"
+    },
+    {
+        name: "5 AM - City Folk",
+        path: "resources/ost/CityFolk/AM 5.mp3",
+        img: "resources/img/CityFolk.png",
+        artist: "Animal Crossing: City Folk"
+    },
+    {
+        name: "6 AM - City Folk",
+        path: "resources/ost/CityFolk/AM 6.mp3",
+        img: "resources/img/CityFolk.png",
+        artist: "Animal Crossing: City Folk"
+    },
+    {
+        name: "7 AM - City Folk",
+        path: "resources/ost/CityFolk/AM 7.mp3",
+        img: "resources/img/CityFolk.png",
+        artist: "Animal Crossing: City Folk"
+    },
+    {
+        name: "8 AM - City Folk",
+        path: "resources/ost/CityFolk/AM 8.mp3",
         img: "resources/img/CityFolk.png",
         artist: "Animal Crossing: New Town"
     },
     {
-        name: "9 PM - New Horizon",
-        path: "resources/ost/NewHorizons9PM.mp3",
-        img: "resources/img/NewHorizons.png",
-        artist: "Animal Crossing: New Horizons"
-    }
+        name: "9 AM - City Folk",
+        path: "resources/ost/CityFolk/AM 9.mp3",
+        img: "resources/img/CityFolk.png",
+        artist: "Animal Crossing: New Town"
+    },
+    {
+        name: "10 AM - City Folk",
+        path: "resources/ost/CityFolk/AM 10.mp3",
+        img: "resources/img/CityFolk.png",
+        artist: "Animal Crossing: New Town"
+    },
+    {
+        name: "11 AM - City Folk",
+        path: "resources/ost/CityFolk/AM 11.mp3",
+        img: "resources/img/CityFolk.png",
+        artist: "Animal Crossing: New Town"
+    },
+    {
+        name: "Noon - City Folk",
+        path: "resources/ost/CityFolk/Noon.mp3",
+        img: "resources/img/CityFolk.png",
+        artist: "Animal Crossing: New Town"
+    },
+    {
+        name: "1 PM - City Folk",
+        path: "resources/ost/CityFolk/PM 1.mp3",
+        img: "resources/img/CityFolk.png",
+        artist: "Animal Crossing: New Town"
+    },
+    {
+        name: "2 PM - City Folk",
+        path: "resources/ost/CityFolk/PM 2.mp3",
+        img: "resources/img/CityFolk.png",
+        artist: "Animal Crossing: New Town"
+    },
+    {
+        name: "3 PM - City Folk",
+        path: "resources/ost/CityFolk/PM 3.mp3",
+        img: "resources/img/CityFolk.png",
+        artist: "Animal Crossing: New Town"
+    },
+    {
+        name: "4 PM - City Folk",
+        path: "resources/ost/CityFolk/PM 4.mp3",
+        img: "resources/img/CityFolk.png",
+        artist: "Animal Crossing: New Town"
+    },
+    {
+        name: "5 PM - City Folk",
+        path: "resources/ost/CityFolk/PM 5.mp3",
+        img: "resources/img/CityFolk.png",
+        artist: "Animal Crossing: New Town"
+    },
+    {
+        name: "6 PM - City Folk",
+        path: "resources/ost/CityFolk/PM 6.mp3",
+        img: "resources/img/CityFolk.png",
+        artist: "Animal Crossing: New Town"
+    },
+    {
+        name: "7 PM - City Folk",
+        path: "resources/ost/CityFolk/PM 7.mp3",
+        img: "resources/img/CityFolk.png",
+        artist: "Animal Crossing: New Town"
+    },
+    {
+        name: "8 PM - City Folk",
+        path: "resources/ost/CityFolk/PM 8.mp3",
+        img: "resources/img/CityFolk.png",
+        artist: "Animal Crossing: New Town"
+    },
+    {
+        name: "9 PM - City Folk",
+        path: "resources/ost/CityFolk/PM 9.mp3",
+        img: "resources/img/CityFolk.png",
+        artist: "Animal Crossing: New Town"
+    },
+    {
+        name: "10 PM - City Folk",
+        path: "resources/ost/CityFolk/PM 10.mp3",
+        img: "resources/img/CityFolk.png",
+        artist: "Animal Crossing: New Town"
+    },
+    {
+        name: "11 PM - City Folk",
+        path: "resources/ost/CityFolk/PM 11.mp3",
+        img: "resources/img/CityFolk.png",
+        artist: "Animal Crossing: New Town"
+    },
+    {
+        name: "Midnight- City Folk",
+        path: "resources/ost/CityFolk/Midnight.mp3",
+        img: "resources/img/CityFolk.png",
+        artist: "Animal Crossing: New Town"
+    }    
 ]
 
 function startTime() {
@@ -44,14 +176,18 @@ function checkTime(i) {
     
 }
 
+    var today = new Date();
+    var h = today.getHours();
+
 function load_track(index_no){
     track.src = OST[index_no].path;
     title.innerHTML = OST[index_no].name;
     artist.innerHTML = OST[index_no].artist;
     track_image.src = OST[index_no].img;
+    track.loop = true;
     track.load();
  }
-load_track(index_no);
+load_track(h-1);
 
 function justPlay(){
     if(playing_song == false){
