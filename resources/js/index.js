@@ -4,11 +4,13 @@ let artist = document.querySelector('#artist');
 let recent_volume = document.querySelector('#volume');
 let volume_show = document.querySelector('#volume_show');
 let track_image = document.querySelector('#track_image');
+let currtine = new Date();
+let interval = 1000;
 
 let timer;
 let autoplay = 0;
 
-let index_no = 0;
+let index_no;
 let playing_song = false;
 
 let track = document.createElement('audio');
@@ -176,9 +178,6 @@ function checkTime(i) {
     
 }
 
-    var today = new Date();
-    var h = today.getHours();
-
 function load_track(index_no){
     track.src = OST[index_no].path;
     title.innerHTML = OST[index_no].name;
@@ -187,10 +186,29 @@ function load_track(index_no){
     track.loop = true;
     track.load();
  }
-load_track(h-1);
 
-function justPlay(){
-    if(playing_song == false){
+var fish = 0;
+
+function OnInterval(){
+    var newtime = new Date();
+    if(currtine.getHours() != newtime.getHours()){
+        fish = newtime.getHours();
+        load_track(fish - 1);
+        track.play();
+    }
+    //fish++;
+    //fish%=24;
+    //load_track(fish)
+    
+    currtine = newtime;
+}
+
+
+function clickPlay(){
+    var today = new Date();
+    var h = today.getHours();
+    if(playing_song === false){       
+        load_track(h-1);
         playSong();
     }else{
          pauseSong();       
@@ -220,3 +238,5 @@ function muteSound(){
     volume.value = 0;
     volume_show.innerHTML = 0;
 }
+
+setInterval(OnInterval,interval)
