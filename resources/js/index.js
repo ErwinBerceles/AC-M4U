@@ -15,7 +15,7 @@ let playing_song = false;
 
 let track = document.createElement('audio');
 
-var OST_one = [
+let OST_one = [
     {
         name: "1 AM",
         path: "resources/ost/GameCube/AM 1.mp3",
@@ -139,7 +139,7 @@ var OST_one = [
     },
 ]
 
-var OST_two = [
+let OST_two = [
     {
         name: "1 AM - City Folk",
         path: "resources/ost/CityFolk/AM 1.mp3",
@@ -286,7 +286,7 @@ var OST_two = [
     }    
 ]
 
-var OST_three = [
+let OST_three = [
     {
         name: "1 AM - New Leaf",
         path: "resources/ost/NewLeaf/AM 1.mp3",
@@ -410,7 +410,7 @@ var OST_three = [
     }
  ]
 
-var OST_four = [
+let OST_four = [
     {
         name: "1 AM - New Horizons",
         path: "resources/ost/NewHorizon/AM 1.mp3",
@@ -533,11 +533,14 @@ var OST_four = [
         artist: "Animal Crossing: New Horizons"
     },
 ];
-var choice = OST_one;
-var fish = 0;
 
+let choice = null //Pre set to First Animal Crossing
+var testNumber = 0;
+var ostSelected;
 
-function startTime() {
+/////////////////////////////////////
+
+function startTime() {              //Code to set up and display the clock
     var today = new Date();
     var h = today.getHours();
     var m = today.getMinutes();
@@ -548,93 +551,86 @@ function startTime() {
 
     var t = setTimeout(startTime,1000);
 }
-function checkTime(i) {
+function checkTime(i) {             // Adds zero at the end
     if ( i < 10 ) { i = "0" + i}
     return i;
 }
 
-function onClickChange(clickId){
+function onClickChange(clickId){    // Changes which game OST you want to listen you
     var newtime = new Date();
     var choiceHold = clickId;
-    fish = newtime.getMinutes();
-    fish %=20
-    
-    load_track(choiceHold, fish-1);
+    testNumber = newtime.getHours();    
+    load_track(choiceHold, testNumber-1);
     play.innerHTML = '<i class = "fa fa-play"></i>';
     pauseSong();
     choice = choiceHold;
 }
 
-function load_track(choice, index_no){
-    var cat;
-    cat = choice;
-    track.src = cat[index_no].path;
-    title.innerHTML = cat[index_no].name;
-    artist.innerHTML = cat[index_no].artist;
-    track_image.src = cat[index_no].img;
+function load_track(x, index_no){   // Loads up the song based on the Game Selection and hour of the day
+    var ostSelected = x;
+    track.src = ostSelected[index_no].path;
+    title.innerHTML = ostSelected[index_no].name;
+    artist.innerHTML = ostSelected[index_no].artist;
+    track_image.src = ostSelected[index_no].img;
     track.loop = true;
     track.load();
-    choice = cat;
+    choice = ostSelected;
  }
 
-
-
-function OnInterval(choice){
-    var cat;
-    cat = choice;
-    var newtime = new Date();
-    console.log("Function ran");
-    if(currtine.getMinutes() != newtime.getMinutes()){
-        console.log("Checked");
-        var fish = newtime.getMinutes();
-         fish %=20;
-        load_track(cat, fish - 1);
-        track.play();
+function OnInterval(){              // Every second, this code will check if a song is currently playing, check to see if the hour has changed then change the song accordingly
+    if (playing_song === true){    
+        var ostPlacehold;
+        ostPlacehold = choice;
+        var newtime = new Date();
+        if(currtine.getHours() != newtime.getHours()){
+            var testNumber = newtime.getHours();
+            load_track(ostPlacehold, testNumber - 1);
+            track.play();
+            }
+        choice = ostPlacehold;
+        currtine = newtime;
     }
-    console.log("check failed");
-    //fish++;
-    //fish%=24;
-    //load_track(fish)
-    choice = cat;
-    currtine = newtime;
 }
+    //- Testing Code -
+    // testNumber++;
+    // testNumber%=24;
+    // console.log(ostPlacehold, testNumber);
+    // load_track(ostPlacehold, testNumber);
 
-
-function clickPlay(){
+function clickPlay(){               // On Click function for the play button, Simply Loads the song and either pauses it or plays it
     var today = new Date();
-    var h = today.getMinutes();
-    var fish = choice;
-    h %=20;
+    var h = today.getHours();
+    var ostPlacehold = choice;
     if(playing_song === false){       
-        load_track(fish, h-1);
+        load_track(ostPlacehold, h-1);
         playSong();
     }else{
          pauseSong();       
         }
     }
 
-function playSong(){
+function playSong(){                // Code to play a song and change the symbol in the play button
     track.play();
     playing_song = true;
     play.innerHTML = '<i class = "fa fa-pause"></i>'
 }
 
-function pauseSong(){
+function pauseSong(){               // Code to pause a song and change the symbol in the play button
     track.pause();
     playing_song= false;
     play.innerHTML = '<i class="fa fa-play"></i>'
     
 }
 
-function volumeChange(){
+function volumeChange(){            // Code that allows the change of volume
     volume_show.innerHTML = recent_volume.value;
     track.volume = recent_volume.value / 100;
 }
 
-function muteSound(){
+function muteSound(){               // An on click function that will mute the volume
     track.volume = 0;
     volume.value = 0;
     volume_show.innerHTML = 0;
 } 
 
-setInterval(console.log("you suck"),interval);
+setInterval(OnInterval,interval);   // Constantly Checks every second
