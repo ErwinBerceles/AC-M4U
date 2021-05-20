@@ -286,8 +286,253 @@ var OST_two = [
     }    
 ]
 
+var OST_three = [
+    {
+        name: "1 AM - New Leaf",
+        path: "resources/ost/NewLeaf/AM 1.mp3",
+        img: "resources/img/NewLeaf.png",
+        artist: "Animal Crossing: New Leaf"
+    },{
+        name: "2 AM - New Leaf",
+        path: "resources/ost/NewLeaf/AM 2.mp3",
+        img: "resources/img/NewLeaf.png",
+        artist: "Animal Crossing: New Leaf"
+    },{
+        name: "3 AM - New Leaf",
+        path: "resources/ost/NewLeaf/AM 3.mp3",
+        img: "resources/img/NewLeaf.png",
+        artist: "Animal Crossing: New Leaf"
+    },{
+        name: "4 AM - New Leaf",
+        path: "resources/ost/NewLeaf/AM 4.mp3",
+        img: "resources/img/NewLeaf.png",
+        artist: "Animal Crossing: New Leaf"
+    },{
+        name: "5 AM - New Leaf",
+        path: "resources/ost/NewLeaf/AM 5.mp3",
+        img: "resources/img/NewLeaf.png",
+        artist: "Animal Crossing: New Leaf"
+    },{
+        name: "6 AM - New Leaf",
+        path: "resources/ost/NewLeaf/AM 6.mp3",
+        img: "resources/img/NewLeaf.png",
+        artist: "Animal Crossing: New Leaf"
+    },{
+        name: "7 AM - New Leaf",
+        path: "resources/ost/NewLeaf/AM 7.mp3",
+        img: "resources/img/NewLeaf.png",
+        artist: "Animal Crossing: New Leaf"
+    },{
+        name: "8 AM - New Leaf",
+        path: "resources/ost/NewLeaf/AM 8.mp3",
+        img: "resources/img/NewLeaf.png",
+        artist: "Animal Crossing: New Leaf"
+    },{
+        name: "9 AM - New Leaf",
+        path: "resources/ost/NewLeaf/AM 9.mp3",
+        img: "resources/img/NewLeaf.png",
+        artist: "Animal Crossing: New Leaf"
+    },{
+        name: "10 AM - New Leaf",
+        path: "resources/ost/NewLeaf/AM 10.mp3",
+        img: "resources/img/NewLeaf.png",
+        artist: "Animal Crossing: New Leaf"
+    },{
+        name: "11 AM - New Leaf",
+        path: "resources/ost/NewLeaf/AM 11.mp3",
+        img: "resources/img/NewLeaf.png",
+        artist: "Animal Crossing: New Leaf"
+    },{
+        name: "Noon- New Leaf",
+        path: "resources/ost/NewLeaf/Noon.mp3",
+        img: "resources/img/NewLeaf.png",
+        artist: "Animal Crossing: New Leaf"
+    },{
+        name: "1 PM - New Leaf",
+        path: "resources/ost/NewLeaf/PM 1.mp3",
+        img: "resources/img/NewLeaf.png",
+        artist: "Animal Crossing: New Leaf"
+    },{
+        name: "2 PM - New Leaf",
+        path: "resources/ost/NewLeaf/PM 2.mp3",
+        img: "resources/img/NewLeaf.png",
+        artist: "Animal Crossing: New Leaf"
+    },{
+        name: "3 PM - New Leaf",
+        path: "resources/ost/NewLeaf/PM 3.mp3",
+        img: "resources/img/NewLeaf.png",
+        artist: "Animal Crossing: New Leaf"
+    },{
+        name: "4 PM - New Leaf",
+        path: "resources/ost/NewLeaf/PM 4.mp3",
+        img: "resources/img/NewLeaf.png",
+        artist: "Animal Crossing: New Leaf"
+    },{
+        name: "5 PM - New Leaf",
+        path: "resources/ost/NewLeaf/PM 5.mp3",
+        img: "resources/img/NewLeaf.png",
+        artist: "Animal Crossing: New Leaf"
+    },{
+        name: "6 PM - New Leaf",
+        path: "resources/ost/NewLeaf/PM 6.mp3",
+        img: "resources/img/NewLeaf.png",
+        artist: "Animal Crossing: New Leaf"
+    },{
+        name: "7 PM - New Leaf",
+        path: "resources/ost/NewLeaf/PM 7.mp3",
+        img: "resources/img/NewLeaf.png",
+        artist: "Animal Crossing: New Leaf"
+    },{
+        name: "8 PM - New Leaf",
+        path: "resources/ost/NewLeaf/PM 8.mp3",
+        img: "resources/img/NewLeaf.png",
+        artist: "Animal Crossing: New Leaf"
+    },{
+        name: "9 PM - New Leaf",
+        path: "resources/ost/NewLeaf/PM 9.mp3",
+        img: "resources/img/NewLeaf.png",
+        artist: "Animal Crossing: New Leaf"
+    },{
+        name: "10 PM - New Leaf",
+        path: "resources/ost/NewLeaf/PM 10.mp3",
+        img: "resources/img/NewLeaf.png",
+        artist: "Animal Crossing: New Leaf"
+    },{
+        name: "11 PM - New Leaf",
+        path: "resources/ost/NewLeaf/PM 11.mp3",
+        img: "resources/img/NewLeaf.png",
+        artist: "Animal Crossing: New Leaf"
+    },{
+        name: "Midnight - New Leaf",
+        path: "resources/ost/NewLeaf/Midnight.mp3",
+        img: "resources/img/NewLeaf.png",
+        artist: "Animal Crossing: New Leaf"
+    }
+ ]
 
-
+var OST_four = [
+    {
+        name: "1 AM - New Horizons",
+        path: "resources/ost/NewHorizon/AM 1.mp3",
+        img: "resources/img/NewHorizons.png",
+        artist: "Animal Crossing: New Horizons"
+    },{
+        name: "2 AM - New Horizons",
+        path: "resources/ost/NewHorizon/AM 2.mp3",
+        img: "resources/img/NewHorizons.png",
+        artist: "Animal Crossing: New Horizons"
+    },{
+        name: "3 AM - New Horizons",
+        path: "resources/ost/NewHorizon/AM 3.mp3",
+        img: "resources/img/NewHorizons.png",
+        artist: "Animal Crossing: New Horizons"
+    },{
+        name: "4 AM - New Horizons",
+        path: "resources/ost/NewHorizon/AM 4.mp3",
+        img: "resources/img/NewHorizons.png",
+        artist: "Animal Crossing: New Horizons"
+    },{
+        name: "5 AM - New Horizons",
+        path: "resources/ost/NewHorizon/AM 5.mp3",
+        img: "resources/img/NewHorizons.png",
+        artist: "Animal Crossing: New Horizons"
+    },{
+        name: "6 AM - New Horizons",
+        path: "resources/ost/NewHorizon/AM 6.mp3",
+        img: "resources/img/NewHorizons.png",
+        artist: "Animal Crossing: New Horizons"
+    },{
+        name: "7 AM - New Horizons",
+        path: "resources/ost/NewHorizon/AM 7.mp3",
+        img: "resources/img/NewHorizons.png",
+        artist: "Animal Crossing: New Horizons"
+    },{
+        name: "8 AM - New Horizons",
+        path: "resources/ost/NewHorizon/AM 8.mp3",
+        img: "resources/img/NewHorizons.png",
+        artist: "Animal Crossing: New Horizons"
+    },{
+        name: "9 AM - New Horizons",
+        path: "resources/ost/NewHorizon/AM 9.mp3",
+        img: "resources/img/NewHorizons.png",
+        artist: "Animal Crossing: New Horizons"
+    },{
+        name: "10 AM - New Horizons",
+        path: "resources/ost/NewHorizon/AM 10.mp3",
+        img: "resources/img/NewHorizons.png",
+        artist: "Animal Crossing: New Horizons"
+    },{
+        name: "11 AM - New Horizons",
+        path: "resources/ost/NewHorizon/AM 11.mp3",
+        img: "resources/img/NewHorizons.png",
+        artist: "Animal Crossing: New Horizons"
+    },{
+        name: "Noon - New Horizons",
+        path: "resources/ost/NewHorizon/Noon.mp3",
+        img: "resources/img/NewHorizons.png",
+        artist: "Animal Crossing: New Horizons"
+    },{
+        name: "1 PM - New Horizons",
+        path: "resources/ost/NewHorizon/PM 1.mp3",
+        img: "resources/img/NewHorizons.png",
+        artist: "Animal Crossing: New Horizons"
+    },{
+        name: "2 PM - New Horizons",
+        path: "resources/ost/NewHorizon/PM 2.mp3",
+        img: "resources/img/NewHorizons.png",
+        artist: "Animal Crossing: New Horizons"
+    },{
+        name: "3 PM - New Horizons",
+        path: "resources/ost/NewHorizon/PM 3.mp3",
+        img: "resources/img/NewHorizons.png",
+        artist: "Animal Crossing: New Horizons"
+    },{
+        name: "4 PM - New Horizons",
+        path: "resources/ost/NewHorizon/PM 4.mp3",
+        img: "resources/img/NewHorizons.png",
+        artist: "Animal Crossing: New Horizons"
+    },{
+        name: "5 PM - New Horizons",
+        path: "resources/ost/NewHorizon/PM 5.mp3",
+        img: "resources/img/NewHorizons.png",
+        artist: "Animal Crossing: New Horizons"
+    },{
+        name: "6 PM - New Horizons",
+        path: "resources/ost/NewHorizon/PM 6.mp3",
+        img: "resources/img/NewHorizons.png",
+        artist: "Animal Crossing: New Horizons"
+    },{
+        name: "7 PM - New Horizons",
+        path: "resources/ost/NewHorizon/PM 7.mp3",
+        img: "resources/img/NewHorizons.png",
+        artist: "Animal Crossing: New Horizons"
+    },{
+        name: "8 PM - New Horizons",
+        path: "resources/ost/NewHorizon/PM 8.mp3",
+        img: "resources/img/NewHorizons.png",
+        artist: "Animal Crossing: New Horizons"
+    },{
+        name: "9 PM - New Horizons",
+        path: "resources/ost/NewHorizon/PM 9.mp3",
+        img: "resources/img/NewHorizons.png",
+        artist: "Animal Crossing: New Horizons"
+    },{
+        name: "10 PM - New Horizons",
+        path: "resources/ost/NewHorizon/PM 10.mp3",
+        img: "resources/img/NewHorizons.png",
+        artist: "Animal Crossing: New Horizons"
+    },{
+        name: "11 PM - New Horizons",
+        path: "resources/ost/NewHorizon/PM 11.mp3",
+        img: "resources/img/NewHorizons.png",
+        artist: "Animal Crossing: New Horizons"
+    },{
+        name: "Midnight - New Horizons",
+        path: "resources/ost/NewHorizon/Midnight.mp3",
+        img: "resources/img/NewHorizons.png",
+        artist: "Animal Crossing: New Horizons"
+    },
+];
 var choice = OST_one;
 var fish = 0;
 
@@ -392,4 +637,4 @@ function muteSound(){
     volume_show.innerHTML = 0;
 } 
 
-setInterval(OnInterval(choice),interval);
+setInterval(console.log("you suck"),interval);
