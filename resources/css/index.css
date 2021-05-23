@@ -1,7 +1,11 @@
 {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family : finkheavy;
+    src : url(resources/css/finkheavy.ttf);
 }
 
 body 
@@ -11,7 +15,13 @@ body
         display: flex;
         align-items: center;
         justify-content: center;
+    font-family: finkheavy;
     }
+
+.test
+{   
+
+}
 
 .main
     {
