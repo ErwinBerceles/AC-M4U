@@ -10,12 +10,14 @@
 
 body 
     {
-        height: 100vh;
+        height: 100%;
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-    font-family: finkheavy;
+        font-family: finkheavy;
+        background: #b4e4f3;
+        margin-top: 150px;
     }
 
 .test
@@ -26,12 +28,12 @@ body
 .main
     {
         position: relative;
-        height: 80%;
-        width: 80%;
-        display: flex;
+        width: 1074px;
+        height: 565px;
         align-items: center;
         justify-content: center;
-        background: linear-gradient(to right, #5d6d7e, #006400)
+        background: #5ACD57;
+        border-radius: 45px 45px 45px 45px;
     }
 
 .main button
@@ -54,39 +56,70 @@ body
     {
         margin-right: 15px;
     }
+#track_image
+    {
+        min-height: 278px;
+        margin-left: auto;
+        min-width: 278px;
+        border-radius:  50%;
+        background:  #B4E4F3;
+        border: 4px solid #FFCD2B;
+        position: absolute;
+        margin-left: 127px;
+        margin-top: -50px;
+    }
 
 .option img
     {
+        background: #B4E4F3;
+        border: 2px solid #FFCD2B;
         position: relative;
-        height: 100px;
-        display: flex;
-        padding: 10px 12px;
-        margin-left: 30px;
+        height: 76px;
+        object-fit: contain;
+        width: 76px;
+        border-radius: 50%;
     }
 
 .option img:hover
     {
-        background: rgba(245,245,245,0.1);
+        background: linear-gradient(180deg, #B4E4F3 0%, rgba(180, 228, 243, 0) 100%)
     }
+.option #rowOne{
+    margin-top: 36px;
+}
+.option #rowTwo{
+    margin-top: 10px;
+}
 
-.right, .left
+.option #one   
     {
+        margin-left:  52px;
         position: relative;
-        height: 100%;
-        width: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+    }
+.option #two   
+    {
+        margin-left: 152px;
+        position: relative;
+    }
+.option #three   
+    {
+        margin-left: 76px;
+        position: relative;
+    }
+.option #four   
+    {   
+        margin-left: 278px;
+        position: relative;
     }
 
-.left img
+.right
     {
-        height: 400px;
-        width: 80%;
-        border-radius:  15px;
-        box-shadow: 1px 0px 20px 12px rgba(240,240,240,0.2);
+
+        float: right;
     }
+.left{
+    float: left;
+}
 
 input[type="range"]
     {
@@ -151,9 +184,10 @@ input[type="range"]::-webkit-slider-thumb
 .right .middle
     {
         width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 150px;
     }
 
 .right .middle button
@@ -171,26 +205,37 @@ input[type="range"]::-webkit-slider-thumb
         background: rgba(245,245,245,0.1);        
     }
 
+.label{
+    
+    color: #FFCD2B;
+    width: 370px;
+    height: 118px;
+    background: #169114;
+    border: 4px solid #ffcd2b;
+    border-radius: 25px;
+    float: right;
+    position: absolute;
+
+}
+
 .right #title
     {
-        position: absolute;
-        top: 60px;
+        align-items: center;
+        text-align: center;
         left: 50%;
-        transform: translateX(-50%);
         text-transform: capitalize;
-        color: #fff;
-        font-size: 35px;
+        font-size: 45px;
+        margin: 0px;
     }
 
 .right #artist
     {
-        position: absolute;
-        top: 115px;
         left: 50%;
-        transform: translateX(-50%);
         text-transform: capitalize;
-        color: #fff;
-        font-size: 18px;
+        font-size: 24px;
+        align-items: center;
+        text-align: center;
+        margin: 0px;
     }
 
 #play
@@ -211,16 +256,17 @@ input[type="range"]::-webkit-slider-thumb
 
 .right .show_song_no
     {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        width: 30px;
-        height: 20px;
-        display: flex;
+        font-size: 100px;
         align-items: center;
-        justify-content: center;
-        padding: 8px 16px;
-        color: #fff;
-        border-radius: 5px;
-        background: rgba(255,255,255,0.2);
+        text-align: center;
+        color: #FFCD2B;
+        width: 370px;
+        height: 118px;
+        background: #169114;
+        border: 4px solid #ffcd2b;
+        border-radius: 25px;
+
+        margin-top: -190px;
+        margin-right: 50px;
     }
+

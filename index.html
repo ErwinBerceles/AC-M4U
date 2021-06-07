@@ -16,13 +16,17 @@
     <div class="main">
         <p id = "logo"><i class = "fa fa-music" aria-hidden="true"></i></p>
         <div class="option">
-            <img onclick="onClickChange(OST_one)" src="resources/img/GameCube.png" alt="Animal Crossing">
-            <img onclick="onClickChange(OST_two)" src="resources/img/CityFolk.png" alt="Animal Crossing: City Folk">
-            <img onclick="onClickChange(OST_three)" src="resources/img/NewLeaf.png" alt="Animal Crossing: New Leaf">
-            <img onclick="onClickChange(OST_four)" src="resources/img/NewHorizons.png" alt="Animal Crossing: New Horizons">
+            <div id="rowOne">
+                <img id="two" onclick="onClickChange(OST_two)" src="resources/img/CityFolk.png" alt="Animal Crossing: City Folk">
+                <img id="three" onclick="onClickChange(OST_three)" src="resources/img/NewLeaf.png" alt="Animal Crossing: New Leaf">
+            </div>
+            <div id="rowTwo">
+                <img id="one" onclick="onClickChange(OST_one)" src="resources/img/GameCube.png" alt="Animal Crossing">
+                <img id="four" onclick="onClickChange(OST_four)" src="resources/img/NewHorizons.png" alt="Animal Crossing: New Horizons">
+            </div>
+        <img id = "track_image" alt=" " src="resources/img/GameCube.png">
         </div>
-        <div class= "left">
-            <img id = "track_image" alt="Game Title">
+        <div class= "left"> 
             <div class = "volume">
                 <p id = "volume_show">90</p>
                 <i class="fa fa-volume-up" aria-hidden="true" id = "volume_icon" onclick = "muteSound()"></i>
@@ -32,13 +36,17 @@
         <div class = "right">
             <div class = "show_song_no" id="txt">    
             </div>
-            <p id = "title">Click The Button to Start</p>        
-            <p id = "artist">Listening to the Music</p>
-            
-            <div class = "middle">
+                        <div class = "middle">
                 <button onclick = "clickPlay()" id = "play"> <i class = "fa fa-play" aria-hidden = 'true'></i></button>
             </div>
-        </div>
+              
+            <div class = "label">
+            <p id = "title">Click Play to Start</p>        
+            <p id = "artist">Listening to the Music</p>
+            </div>
+            </div>
+
+      
     </div>
     <script type="text/javascript" src="resources/js/index.js"></script>
 </body>
